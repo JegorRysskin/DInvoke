@@ -303,10 +303,6 @@ namespace DInvoke.DynamicInvoke
                 IntPtr handle
             );
 
-
-            // [UnmanagedFunctionPointer(CallingConvention.StdCall)]
-            // public delegate Boolean CreateProcess(string lpApplicationName, string lpCommandLine, IntPtr lpProcessAttributes, IntPtr lpThreadAttributes, bool bInheritHandles, Data.Win32.Advapi32.CREATION_FLAGS dwCreationFlags, IntPtr lpEnvironment, string lpCurrentDirectory, ref Data.Win32.ProcessThreadsAPI.STARTF lpStartupInfo, out Data.Win32.ProcessThreadsAPI._PROCESS_INFORMATION lpProcessInformation);
-
             [UnmanagedFunctionPointer(CallingConvention.StdCall)]
             public delegate IntPtr VirtualAllocEx(IntPtr hProcess, IntPtr lpAddress, uint dwSize, uint flAllocationType, uint flProtect);
 
